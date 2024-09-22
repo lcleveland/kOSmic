@@ -1,3 +1,4 @@
+#   This file defines the settings for allowing 'flakes' in the OS.
 { config, lib, ... }:
 let
   cfg = config.core.settings.nix.enable_flakes;
