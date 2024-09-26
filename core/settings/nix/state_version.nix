@@ -10,5 +10,7 @@ in
       description = lib.mdDoc "Nix state version";
     };
   };
-  system.stateVersion = cfg.state_version;
+  config = {
+    system.stateVersion = cfg.state_version;
+  };
 }

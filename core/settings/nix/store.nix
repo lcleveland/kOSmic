@@ -10,5 +10,7 @@ in
       description = lib.mdDoc "Enable Nix store optimization";
     };
   };
-  nix.settings.auto-optimise-store = cfg.enable;
+  config = {
+    nix.settings.auto-optimise-store = cfg.enable;
+  };
 }
