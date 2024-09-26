@@ -1,4 +1,4 @@
-#   This file defines the settings for allowing 'unfree' features in the OS.
+# This file defines the settings for allowing 'unfree' features in the OS.
 { config, lib, ... }:
 let
   cfg = config.core.settings.allow_unfree;

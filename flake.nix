@@ -1,15 +1,21 @@
 {
   description = "A very basic flake";
 
+  outputs = inputs@{ home_manager, nixpkgs, nixpkgs_stable, nixvim, self }: { };
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
-  };
-
-  outputs = { self, nixpkgs }: {
-
-    packages.x86_64-linux.hello = nixpkgs.legacyPackages.x86_64-linux.hello;
-
-    packages.x86_64-linux.default = self.packages.x86_64-linux.hello;
-
+    home_manager = {
+      inputs.nixpkgs.follows = "nixpkgs";
+      url = "github:nix-community/home-manager";
+    };
+    nixpkgs = {
+      url = "github:nixos/nixpkgs?ref=nixos-unstable";
+    };
+    nixpkgs_stable = {
+      url = "github:nixos/nixpkgs?ref=nixos-24.05";
+    };
+    nixvim = {
+      inputs.nixpkgs.follows = "nixpkgs";
+      url = "github:nix-community/nixvim";
+    };
   };
 }
