@@ -1,5 +1,5 @@
 {
-  description = "A very basic flake";
+  description = "A NixOS that is based on the Cosmic DE";
 
   outputs = inputs@{ home_manager, nixpkgs, nixpkgs_stable, nixvim, self }: { };
   inputs = {
