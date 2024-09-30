@@ -6,6 +6,7 @@
     ./graphics
     ./kernel
     ./keyboard
+    ./language
     ./network
     ./nix
     ./time
