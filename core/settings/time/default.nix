@@ -1,5 +1,5 @@
 { ... }: {
   imports = [
-    ./settings
+    ./timezone.nix
   ];
 }
