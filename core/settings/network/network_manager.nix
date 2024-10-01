@@ -11,6 +11,6 @@ in
     };
   };
   config = lib.mkIf cfg.enable {
-    networkmanager.enable = cfg.enable;
+    networking.networkmanager.enable = cfg.enable;
   };
 }
