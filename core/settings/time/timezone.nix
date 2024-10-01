@@ -5,7 +5,7 @@ in
 {
   options.core.settings.time = {
     timezone = lib.mkOption {
-      type = lib.types.string;
+      type = lib.types.str;
       default = "America/Chicago";
       description = lib.mdDoc "Timezone to use for the OS.";
     };
