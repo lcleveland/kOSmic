@@ -15,7 +15,7 @@
     in
     {
       nixosConfigurations = {
-        home = make_unstable_system [ ./profiles/home.nix ] [ ./hardware_configurations.dream.hardware-configuration.nix ];
+        home = make_unstable_system [ ./profiles/home.nix ] [ ./hardware_configurations/dream/hardware-configuration.nix ];
       };
     };
   inputs = {
