@@ -7,15 +7,10 @@
         ./core
         home_manager.nixosModules.home-manager
       ];
-      make_unstable_system = profile: extra_modules:
+      make_unstable_system = profile: hardware_configuration:
         nixpkgs.lib.nixosSystem {
           system = nixpkgs.config.core.settings.nix.system;
-          modules = base_modules ++ extra_modules;
-        };
-      make_stable_system = profile: extra_modules:
-        nixpkgs_stable.lib.nixosSystem {
-          system = nixpkgs_stable.config.core.settings.nix.system;
-          modules = base_modules ++ extra_modules;
+          modules = base_modules ++ profile ++ hardware_configuration;
         };
     in
     {
