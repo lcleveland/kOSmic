@@ -12,6 +12,6 @@ in
     };
   };
   config = {
-    nixpkgs.lib.nixosSystem.system = cfg.system;
+    lib.nixosSystem.system = cfg.system;
   };
 }
