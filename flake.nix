@@ -13,7 +13,7 @@
           specialArgs = {
             inherit inputs;
           };
-          system = nixpkgs.config.core.settings.nix.system;
+          system = profile.core.settings.nix.system;
         };
     in
     {
