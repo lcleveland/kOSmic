@@ -9,8 +9,11 @@
       ];
       make_unstable_system = profile: hardware_configuration:
         nixpkgs.lib.nixosSystem {
-          system = nixpkgs.config.core.settings.nix.system;
           modules = base_modules ++ profile ++ hardware_configuration;
+          specialArgs = {
+            inherit inputs;
+          };
+          system = nixpkgs.config.core.settings.nix.system;
         };
     in
     {
