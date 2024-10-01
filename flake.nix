@@ -13,7 +13,7 @@
           specialArgs = {
             inherit inputs;
           };
-          system = profile.core.settings.nix.system;
+          system = "x86_64-linux";
         };
     in
     {
