@@ -11,6 +11,6 @@ in
     };
   };
   config = {
-    time.timezone = cfg.timezone;
+    time.timeZone = cfg.timezone;
   };
 }
