@@ -1,7 +1,7 @@
 {
   description = "A NixOS that is based on the Cosmic DE";
 
-  outputs = inputs@{ config, home_manager, nixpkgs, nixpkgs_stable, nixvim, self }:
+  outputs = inputs@{ home_manager, nixpkgs, nixpkgs_stable, nixvim, self }:
     let
       base_modules = [
         ./core
@@ -9,12 +9,12 @@
       ];
       make_unstable_system = profile: extra_modules:
         nixpkgs.lib.nixosSystem {
-          system = config.core.settings.nix.system;
+          system = nixpkgs.config.core.settings.nix.system;
           modules = base_modules ++ extra_modules;
         };
       make_stable_system = profile: extra_modules:
         nixpkgs_stable.lib.nixosSystem {
-          system = config.core.settings.nix.system;
+          system = nixpkgs_stable.config.core.settings.nix.system;
           modules = base_modules ++ extra_modules;
         };
     in
