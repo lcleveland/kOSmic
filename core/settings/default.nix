@@ -9,6 +9,7 @@
     ./language
     ./network
     ./nix
+    ./sound
     ./time
     ./virtualization
   ];
