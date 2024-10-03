@@ -40,6 +40,7 @@
       url = "github:nixos/nixpkgs?ref=nixos-unstable";
     };
     nixpkgs_stable = {
+      follows = "nixos_cosmic/nixpkgs-stable";
       url = "github:nixos/nixpkgs?ref=nixos-24.05";
     };
     nixvim = {
