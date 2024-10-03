@@ -36,7 +36,7 @@
       url = "github:lilyinstarlight/nixos-cosmic";
     };
     nixpkgs = {
-      follows = "nixos-cosmic/nixpkgs";
+      follows = "nixos_cosmic/nixpkgs";
       url = "github:nixos/nixpkgs?ref=nixos-unstable";
     };
     nixpkgs_stable = {
