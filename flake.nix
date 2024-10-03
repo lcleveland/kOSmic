@@ -14,9 +14,9 @@
         home_manager.nixosModules.home-manager
         nixos_cosmic.nixosModules.default
       ];
-      make_unstable_system = profile: hardware_configuration:
+      make_unstable_system = profile:
         nixpkgs.lib.nixosSystem {
-          modules = base_modules ++ profile ++ hardware_configuration;
+          modules = base_modules ++ profile;
           specialArgs = {
             inherit inputs;
           };
@@ -24,7 +24,7 @@
     in
     {
       nixosConfigurations = {
-        home = make_unstable_system [ ./profiles/home.nix ] [ ./hardware_configurations/dream/hardware-configuration.nix ];
+        home = make_unstable_system [ ./profiles/home.nix ];
       };
     };
   inputs = {
