@@ -33,7 +33,7 @@
       url = "github:nix-community/home-manager";
     };
     nixos_cosmic = {
-      inputs.nixpkgs.follows = "nixos-cosmic/nixpkgs";
+      inputs.nixpkgs.follows = "nixos_cosmic/nixpkgs";
       url = "github:lilyinstarlight/nixos-cosmic";
     };
     nixpkgs = {
