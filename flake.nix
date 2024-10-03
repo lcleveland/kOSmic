@@ -25,6 +25,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
       url = "github:nix-community/home-manager";
     };
+    nixos_cosmic = {
+      inputs.nixpkgs.follows = "nixos-cosmic/nixpkgs";
+      url = "github:lilyinstarlight/nixos-cosmic";
+    };
     nixpkgs = {
       url = "github:nixos/nixpkgs?ref=nixos-unstable";
     };
