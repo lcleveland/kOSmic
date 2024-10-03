@@ -24,7 +24,7 @@
     in
     {
       nixosConfigurations = {
-        home = make_unstable_system [ ./profiles/home.nix ];
+        home = make_unstable_system [ ./core/profiles/home.nix ];
       };
     };
   inputs = {
