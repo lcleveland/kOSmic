@@ -257,22 +257,6 @@
         "type": "github"
       }
     },
-    "nixpkgs_stable": {
-      "locked": {
-        "lastModified": 1727672256,
-        "narHash": "sha256-9/79hjQc9+xyH+QxeMcRsA6hDyw6Z9Eo1/oxjvwirLk=",
-        "owner": "nixos",
-        "repo": "nixpkgs",
-        "rev": "1719f27dd95fd4206afb9cec9f415b539978827e",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nixos",
-        "ref": "nixos-24.05",
-        "repo": "nixpkgs",
-        "type": "github"
-      }
-    },
     "nixvim": {
       "inputs": {
         "devshell": "devshell",
@@ -331,7 +315,10 @@
           "nixos_cosmic",
           "nixpkgs"
         ],
-        "nixpkgs_stable": "nixpkgs_stable",
+        "nixpkgs_stable": [
+          "nixos_cosmic",
+          "nixpkgs-stable"
+        ],
         "nixvim": "nixvim"
       }
     },

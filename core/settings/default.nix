@@ -3,6 +3,7 @@
     ./ai
     ./boot
     ./cpu
+    ./desktop_environment
     ./graphics
     ./kernel
     ./keyboard
