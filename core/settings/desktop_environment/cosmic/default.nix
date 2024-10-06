@@ -1,10 +1,9 @@
-{ config, lib, nixos_cosmic, ... }:
+{ config, lib, nixos_cosmic, nixpkgs, ... }:
 let
   cfg = config.core.settings.desktop_environment.cosmic;
 in
 {
   imports = [
-    nixos_cosmic.nixosModules.default
   ];
   options.core.settings.desktop_environment.cosmic = {
     enable = lib.mkOption {
