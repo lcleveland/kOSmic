@@ -4,12 +4,6 @@
   outputs = inputs@{ home_manager, nixos_cosmic, nixpkgs, nixpkgs_stable, nixvim, self }:
     let
       base_modules = [
-        {
-          nix.settings = {
-            substituters = [ "https://cosmic.cachix.org/" ];
-            trusted-public-keys = [ "cosmic.cachix.org-1:Dya9IyXD4xdBehWjrkPv6rtxpmMdRel02smYzA85dPE=" ];
-          };
-        }
         ./core
         home_manager.nixosModules.home-manager
         nixos_cosmic.nixosModules.default
