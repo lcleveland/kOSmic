@@ -4,6 +4,7 @@ let
 in
 {
   imports = [
+    ./display_manager.nix
   ];
   options.core.settings.desktop_environment.cosmic = {
     enable = lib.mkOption {
@@ -28,6 +29,5 @@ in
       trusted-public-keys = cfg.trusted_public_keys;
     };
     services.desktopManager.cosmic.enable = cfg.enable;
-    services.displayManager.cosmic-greeter.enable = cfg.enable;
   };
 }
