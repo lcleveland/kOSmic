@@ -7,6 +7,7 @@
         ./core
         home_manager.nixosModules.home-manager
         nixos_cosmic.nixosModules.default
+        ./users
       ];
       make_unstable_system = profile:
         nixpkgs.lib.nixosSystem {
