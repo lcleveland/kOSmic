@@ -14,6 +14,18 @@ in
       default = false;
       description = "Enable the user";
     };
+    state_version = lib.mkOption {
+      type = lib.types.str;
+      default = "24.05";
+      description = "The state version for home manager for this user";
+    };
   };
-  config.users.${username} = lib.mkIf cfg.enable { };
+  config.users.${username} = lib.mkIf cfg.enable {
+    home_manager.users.${username} = {
+      home = {
+        stateVersion = "${cfg.state_version}";
+        username = "${username}";
+      };
+    };
+  };
 }
