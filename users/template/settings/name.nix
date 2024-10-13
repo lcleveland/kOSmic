@@ -1,7 +1,7 @@
+{ username, ... }:
 { config, lib, ... }:
 let
   cfg = config.users.${username};
-  inherit (import ../default.nix) username;
 in
 {
   options.users.${username} = {

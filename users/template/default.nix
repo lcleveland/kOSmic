@@ -6,7 +6,7 @@ in
 {
   imports = [
     ./applications
-    ./settings
+    (import ./settings { username = username; })
   ];
   options.users.${username} = {
     enable = lib.mkOption {

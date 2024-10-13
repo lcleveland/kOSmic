@@ -1,6 +1,7 @@
+{ username }:
 { ... }:
 {
   imports = [
-    ./name.nix
+    (import ./name.nix { username = username; })
   ];
 }
