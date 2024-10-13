@@ -4,11 +4,7 @@ let
 in
 {
   imports = [
-    ((import ./applications) {
-      username = "${username}";
-    })
-    ((import ./settings) {
-      username = "${username}";
-    })
+    ./applications
+    ./settings
   ];
 }
