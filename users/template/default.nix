@@ -20,8 +20,8 @@ in
       description = "The state version for home manager for this user";
     };
   };
-  config.users.${username} = lib.mkIf cfg.enable {
-    home_manager.users.${username} = {
+  config = lib.mkIf cfg.enable {
+    home-manager.users.${username} = {
       home = {
         stateVersion = "${cfg.state_version}";
         username = "${username}";
