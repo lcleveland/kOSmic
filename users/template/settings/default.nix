@@ -8,5 +8,6 @@
     (import ./is_normal_user.nix { username = username; })
     (import ./name.nix { username = username; })
     (import ./state_version.nix { username = username; })
+    (import ./username { username = username; })
   ];
 }
