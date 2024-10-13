@@ -1,5 +1,6 @@
 { ... }:
-let
-  inherit (import ../default.nix) username;
-in
-{ }
+{
+  imports = [
+    ./name.nix
+  ];
+}
