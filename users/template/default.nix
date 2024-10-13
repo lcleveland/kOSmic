@@ -1,6 +1,14 @@
-{ ... }: {
+{ ... }:
+let
+  username = "template";
+in
+{
   imports = [
-    ./applicatons
-    ./settings
+    ((import ./applicatons) {
+      username = "${username}";
+    })
+    ((import ./settings) {
+      username = "${username}";
+    })
   ];
 }
