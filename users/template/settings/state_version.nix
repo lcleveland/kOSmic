@@ -5,7 +5,7 @@ let
 in
 {
   options.users.${username} = {
-    name = lib.mkOption {
+    state_version = lib.mkOption {
       type = lib.types.str;
       default = "24.05";
       description = "The state version for home manager for this user";
