@@ -4,7 +4,7 @@ let
 in
 {
   imports = [
-    ((import ./applicatons) {
+    ((import ./applications) {
       username = "${username}";
     })
     ((import ./settings) {
