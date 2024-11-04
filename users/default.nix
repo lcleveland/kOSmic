@@ -1,5 +1,6 @@
 { ... }: {
   imports = [
+    ./lcleveland
     ./settings
     ./template
   ];
