@@ -20,6 +20,7 @@
     {
       nixosConfigurations = {
         home = make_unstable_system [ ./core/profiles/home.nix ];
+        test_vm = make_unstable_system [ ./core/profiles/test_vm.nix ];
       };
     };
   inputs = {
