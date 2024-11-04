@@ -2,5 +2,7 @@
   imports = [
     /etc/nixos/hardware-configuration.nix
   ];
-  options.users.lcleveland.enable = true;
+  config = {
+    options.users.lcleveland.enable = true;
+  };
 }
