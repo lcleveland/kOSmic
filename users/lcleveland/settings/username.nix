@@ -8,7 +8,7 @@ in
     username = lib.mkOption {
       type = lib.types.str;
       default = "${username}";
-      descripiton = "Username of the user.";
+      description = "Username of the user.";
     };
   };
   config = lib.mkIf cfg.enable {
