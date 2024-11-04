@@ -1,6 +1,6 @@
 { ... }: {
   imports = [
-    ./hardware_configurations/test_vm.nix
+    /etc/nixos/hardware-configuration.nix
   ];
   options.users.lcleveland.enable = true;
 }
