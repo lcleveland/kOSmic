@@ -2,5 +2,5 @@
   imports = [
     /etc/nixos/hardware-configuration.nix
   ];
-  users.lcleveland.enable = true;
+  users.vm_admin.enable = true;
 }
