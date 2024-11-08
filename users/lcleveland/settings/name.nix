@@ -7,7 +7,7 @@ in
   options.users.${username} = {
     name = lib.mkOption {
       type = lib.types.str;
-      default = "Template User";
+      default = "Lyle Cleveland";
       description = "The name of the user";
     };
   };

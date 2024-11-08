@@ -4,7 +4,7 @@
   options.users.${username} = {
     email = lib.mkOption {
       type = lib.types.str;
-      default = "template@template.com";
+      default = "lyle.cleveland@proton.me";
       description = "The email for the user";
     };
   };
