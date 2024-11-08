@@ -6,6 +6,6 @@
   core.settings.boot.systemd.enable = false;
   boot.loader.grub = {
     enable = true;
-    device = "/dev/vda1";
+    device = "/dev/vda";
   };
 }
